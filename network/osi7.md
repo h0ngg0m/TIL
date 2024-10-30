@@ -74,3 +74,22 @@
   - Connectionless
     - 연결 지향과는 달리 데이터의 무결성, 순서, 전달 여부를 확인하지 않음
     - 빠르게 데이터를 전달하기 위해 사용
+
+## Session Layer (5계층)
+- 통신 주체끼리 연결을 유지할 수 있는 방법을 정의
+- 예전의 컴퓨팅 환경에서 Layer 1, 2, 3, 4 이외의 차원에서 지속적인 연결이 수립될 수 있는 방법을 제공
+- 현대에서도 마찬가지로 Layer 4 이상의 추가적인 차원에서 지속적인 연결을 수립할 수 있는 방법을 포함
+  - 예: HTTP Cookie
+- 몇몇 프로토콜의 경우 Session Layer를 건너뛰는 경우가 있음 
+  - 예: FTP  
+
+## Presentation Layer (6계층)
+- 받은 데이터를 해석하는 방법을 정의
+- 다음 계층인 Application Layer에서 데이터를 해석할 수 있도록 변환
+
+## Application Layer (7계층)
+- 실제 받은 데이터를 어떻게 해석할지 정의
+- 예: HTTP의 경우
+  - Method: GET, POST, PUT, DELETE...
+  - Header: Content-Type, Content-Length...
+  - Status Code: 200, 404, 500...
